@@ -1,134 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
- <style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+  <style>
     body {
-      background-color: #ffffff;
+      background-color: rgb(53, 7, 94);
+      margin: 0;
     }
- </style>
-</head>
-<body>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: "Lato", sans-serif;
-  transition: background-color .5s;
-}
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: #a51ece;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #ffffff;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #ffffff;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 0px;
-  font-size: 36px;
-  margin-right: 0px;
-}
-
-#main {
-  transition: margin-right .5s;
-  padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
+  </style>
 </head>
 <body>
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Home</a>
-  <a href="#">Games</a>
-  <a href="#">Shop</a>
-  <a href="#">About Us</a>
+<header>
+  <div class="menu-button" onclick="toggleSidebar()">☰ Menu</div>
+  <h1>JAV Gaming</h1>
+</header>
+
+<div id="sidebar">
+  <a href="index.html">Home</a>
+  <a href="shop.html">Shop</a>
+  <a href="aboutus.html">About Us</a>
 </div>
 
-<div id="main">
-  <h1 style="font-size:36px;">JAV Gaming</h1>
-<style>
-    .right-side {
-        position: absolute;
-        right: 25px;
-    }
-</style>
+<div style="height: 100px;"></div>
 
-<span class="right-side" style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; Menu</span></div>
-
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginRight = "250px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginRight= "0";
-  document.body.style.backgroundColor = "white";
-}
-</script>
-<section class="featured-games">
-  <h2>Featured Games</h2>
-  <div class="game-card">
-      <h3>Spider-Man 2</h3>
-      <img src="/Photos/marvels-spider-man-2-ps5-screenshot-gallery-1.jpg" width=500px; height=300px;>
-      <p>Description of Game 1.</p>
-  </div>
-  <div class="game-card">
-      <h3>Call of Duty MW3 </h3>
-      <img src="/Photos/jpt-hero-desktop.jpg" width=500px; height=300px;>
-      <p>Description of Game 2.</p>
-  </div>
-  <div class="game-card">
-      <h3>Valorant</h3>
-      <img src="/Photos/Valorant_2022_EP6-1_PlayVALORANT_ContentStackThumbnail_1200x625_MB01.png" width=500px; height=300px;>
-      <p>Description of Game 3.</p>
-  </div>
-  <div class="game-card">
-    <h3> FC 24 </h3>
-    <img src="/Photos/2x1_NSwitch_EaSportsFc24_image1600w.jpg" width=500px; height=300px;>
-    <p>Description of Game 4.</p>
-</div>
-<div class="game-card">
-    <h3>Clash of Clans</h3>
-  <img src="/Photos/91ORNgyTf2L.png" width=500px; height=300px;>
-  <p>Description of Game 5.</p>
-</div>
-<div class="game-card">
-    <h3>Clash of Clans</h3>
-    <img src="game5.jpg" width=500px; height=300px;>
-    <p>Description of Game 5.</p>
-  </div>
+<section id="center-section">
+  <table class="game-table">
+    <tr>
+      <td>
+        <a href="Spiderman.html" target="_blank">
+          <img width="320" height="180" src="Photos/marvels-spider-man-2-ps5-screenshot-gallery-1.jpg" alt="Spider-Man 2" />
+        </a>
+        <h3>Spider-Man 2</h3>
+      </td>
+      <td>
+        <a href="MW3.html" target="_blank">
+          <img width="320" height="180" src="Photos/jpt-hero-desktop.jpg" alt="MW3" />
+        </a>
+        <h3>Modern Warfare 3</h3>
+      </td>
+      <td>
+        <a href="Valorant.html" target="_blank">
+          <img width="320" height="180" src="Photos/Valorant_2022_EP6-1_PlayVALORANT_ContentStackThumbnail_1200x625_MB01.png" alt="Valorant" />
+        </a>
+        <h3>Valorant</h3>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="FC24.html" target="_blank">
+          <img width="320" height="180" src="Photos/2x1_NSwitch_EaSportsFc24_image1600w.jpg" alt="FC 24" />
+        </a>
+        <h3>FC 24</h3>
+      </td>
+      <td>
+        <a href="Clash.html" target="_blank">
+          <img width="320" height="180" src="Photos/91ORNgyTf2L.png" alt="Clash Of Clans" />
+        </a>
+        <h3>Clash Of Clans</h3>
+      </td>
+      <td>
+        <a href="Roblox.html" target="_blank">
+          <img width="320" height="180" src="Photos/07JT0PyXyAMXyHqe3NQtyET-6.fit_lim.v1632864735.jpg" alt="Roblox" />
+        </a>
+        <h3>Roblox</h3>
+      </td>
+    </tr>
+  </table>
 </section>
 
+<script>
+  function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    if (sidebar.style.width === '250px') {
+      sidebar.style.width = '0';
+    } else {
+      sidebar.style.width = '250px';
+    }
+  }
+</script>
+
 </body>
-</html> 
+</html>
