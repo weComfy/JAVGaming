@@ -2,29 +2,54 @@
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="MW3.css">
   <style>
-    body {
-      background-color: rgb(53, 7, 94);
-      margin: 0;
+
+  
+    #header-image {
+      text-align: center;
+      margin-top: 20px; }
+
+    #header-image img {
+      max-width: 100%; 
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <div class="menu-button" onclick="toggleSidebar()">☰ Menu</div>
-    <h1>JAV Gaming</h1>
-  </header>
-  
   <div id="sidebar">
     <a href="index.html">Home</a>
     <a href="shop.html">Shop</a>
     <a href="aboutus.html">About Us</a>
   </div>
-  
-  <div style="height: 100px;"></div>
+  <header>
+    <div class="menu-button" onclick="toggleSidebar()">☰ Menu</div>
+    <h1>JAV Gaming</h1>
+  </header>
+  <div id="header-image">
+    <img src="/Photos/MW3.jpg" alt="Large Photo" width="90%">
+  </div>
 
+  <main>
+    <div style="height: 25px;"></div>
+    <article class="news-item">
+    <p>Call of Duty: Modern Warfare III is a 2023 first-person shooter video game developed by Sledgehammer Games and published by Activision. It is a sequel to 2022's Modern Warfare II, serving as the third entry in the rebooted Modern Warfare sub-series and the twentieth installment in the overall Call of Duty series. The game was released on November 10, 2023, for PlayStation 4, PlayStation 5, Windows, Xbox One, and Xbox Series X/S.</p>
+    </article>
+  
+    <section id="center-section">
+      <h2>Latest News</h2>
+      <article class="news-item">
+        <h3>Exciting Updates Coming to Modern Warfare 3!</h3>
+        <p>We're thrilled to announce a wave of exciting updates coming to Modern Warfare 3. Get ready for new maps, thrilling gameplay enhancements, and much more. The battlefield is about to evolve, and we can't wait for you to experience it!</p>
+        <p>Published on: November 23, 2023</p>
+      </article>
+
+      <article class="news-item">
+        <h3>New Maps and Weapons Revealed</h3>
+        <p>Curabitur euismod sem id metus varius, id ultricies ligula aliquet. Sed sit amet sem id elit malesuada lacinia.</p>
+        <p>Published on: November 22, 2023</p>
+      </article>
+    </section>
+  </main>
   <script>
     function toggleSidebar() {
       const sidebar = document.getElementById('sidebar');
