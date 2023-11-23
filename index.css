@@ -39,7 +39,7 @@ h3, p {
 }
 
 header {
-    background-color: #100329;
+    background-color: blue;
     padding: 15px;
     color: white;
     display: flex;
