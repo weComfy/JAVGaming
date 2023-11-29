@@ -44,12 +44,11 @@ color: aliceblue;
 }
 
 img{
-    height: auto;
-    width: 1000px;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+     display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
 }
 .description {
 
