@@ -2,29 +2,74 @@
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="MW3.css">
   <style>
-    body {
-      background-color: rgb(53, 7, 94);
-      margin: 0;
+
+  
+    #header-image {
+      text-align: center;
+      margin-top: 20px; }
+
+    #header-image img {
+      max-width: 100%; 
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <div class="menu-button" onclick="toggleSidebar()">☰ Menu</div>
-    <h1>JAV Gaming</h1>
-  </header>
-  
   <div id="sidebar">
     <a href="index.html">Home</a>
     <a href="shop.html">Shop</a>
     <a href="aboutus.html">About Us</a>
   </div>
-  
-  <div style="height: 100px;"></div>
+  <header>
+    <div class="menu-button" onclick="toggleSidebar()">☰ Menu</div>
+    <h1>JAV Gaming</h1>
+  </header>
+  <div id="header-image">
+    <img src="Photos/fc24.jpg" alt="Large Photo" width="90%">
+  </div>
 
+  <main>
+    <div style="height: 25px;"></div>
+    <article class="news-item">
+    <p>Fifa, now EA Sports FC 24 is an association football themed simulation game. The game was developed by both EA sports Vancouver and EA Romania and published by EA Sports. Following the successful releases of their previous FIFA titles, which concluded with FIFA 23,
+      this is EA Sports newest installment in their EA Sports FC seried. However, this is the 31st installment overall to EA's football simulation themed games. The game was released in 2023 for Windows, Nintendo Switch, Playstation 4/ 5 and Xbox One & Series X/S.
+    </p>
+    </article>
+  
+    <section id="center-section">
+      <h2>EA Sports FC 24 Review:</h2>
+      <article class="news-item">
+        <p>
+          Although EA Sports decided to change the title of their game we're still faced with the same identity of its predecessors, a fantastic, competitive sports game with added freshness. Gameplay is familiar yet fresh, by adding RPG elements like "Superpowered Cards" and various "Playstyles" however,
+          even with such additions the game feels more like an update and less like a new release which is very much to the games detriment. That isn't to say its bad, very much the opposite, it follows it's tried and true formula but puts a spin on things in regards to new gameplay mechanics, a better 
+          management system to collect new cards or players and fresh graphics which make the game feel alive with new , fluid animations, "HyperMotion V" which creates almost realistic gameplay and a better passing system. 
+        </p>
+        <p>Although it isn't a perfect football simulator, its still highly enjoyable and refreshing to see EA take certain risks with their already popular franchise</p>
+      </article>
+
+      <article class="news-item">
+        <h3>Perks & Detriments:</h3>
+        <div class = "container">
+          <ul class = "myUL">
+            <li>
+              Perks:
+              <ul>
+                <li>The addition of Playstyles adds more depth and diversity</li>
+                <li>Presentation of the game feels better than watching an official match</li>
+                <li>HyperMotion V enhances the realism</li>
+              </ul>
+            </li>
+            Detriments:
+            <ul>
+              <li>Little change in Career modes</li>
+              <li>Mechanic to recieve packs is unchanged</li>
+            </ul>
+          </li>
+          </div>
+      </article>
+    </section>
+  </main>
   <script>
     function toggleSidebar() {
       const sidebar = document.getElementById('sidebar');
