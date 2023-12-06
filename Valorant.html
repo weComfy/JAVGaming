@@ -2,29 +2,72 @@
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="MW3.css">
   <style>
-    body {
-      background-color: rgb(53, 7, 94);
-      margin: 0;
+
+  
+    #header-image {
+      text-align: center;
+      margin-top: 20px; }
+
+    #header-image img {
+      max-width: 100%; 
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <div class="menu-button" onclick="toggleSidebar()">☰ Menu</div>
-    <h1>JAV Gaming</h1>
-  </header>
-  
   <div id="sidebar">
     <a href="index.html">Home</a>
     <a href="shop.html">Shop</a>
     <a href="aboutus.html">About Us</a>
   </div>
-  
-  <div style="height: 100px;"></div>
+  <header>
+    <div class="menu-button" onclick="toggleSidebar()">☰ Menu</div>
+    <h1>JAV Gaming</h1>
+  </header>
+  <div id="header-image">
+    <img src="Photos/Valorant.jpg" alt="Large Photo" width="90%">
+  </div>
 
+  <main>
+    <div style="height: 25px;"></div>
+    <article class="news-item">
+    <p> Valorant is a free-to-play first person tactical herp shooter game. Developed and published by Riot Games. Released in 2020 and available only on Windows.</p>
+    </article>
+  
+    <section id="center-section">
+      <h2>Latest News</h2>
+      <article class="news-item">
+        <h3>Exciting Updates Coming to Modern Warfare 3!</h3>
+        <p>Spanning over 25 rounds the game places players in 5v5 teams where they have to either attack or defend. With unique skills relevant to their class, Attackers have to safely plant their bombs and defend it by decimating all opposing players and Defenders have to try and defuse said bomb
+        while also trying to clear the map of other players. Before each match starts players have the opportunity to purchase skill and guns that will help them achieve victory. Outside of the matches players can also achieve unique customisations for weapons through the shop, allowing for a singular
+        expereince in a well-populated gamestate.
+        For those who are a fan of the first-person shooter genre, Valorant is a delight.</p>
+      </article>
+
+      <article class="news-item">
+        <h3>Perks & Detriments:</h3>
+        <div class = "container">
+          <ul class = "myUL">
+            <li>
+              Perks:
+              <ul>
+                <li>Excellent gunplay</li>
+                <li>Diverse classes to choose from</li>
+                <li>Beautiful graphics</li>
+              </ul>
+            </li>
+            Detriments:
+            <ul>
+              <li>Small pool of maps to play on</li>
+              <li>High skill ceiling, can feel daunting for new players</li>
+            </ul>
+          </li>
+          </div>
+        
+      </article>
+    </section>
+  </main>
   <script>
     function toggleSidebar() {
       const sidebar = document.getElementById('sidebar');
