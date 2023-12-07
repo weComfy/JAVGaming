@@ -38,7 +38,7 @@ body {
   }
   
   header {
-    background-color: aliceblue;
+    background-color: #3b7cac;
     padding: 20px;
     color: white;
     display: flex;
@@ -56,7 +56,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: aliceblue;
+    background-color: #3b7cac;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
