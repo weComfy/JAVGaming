@@ -32,9 +32,9 @@ body {
     padding: 10px;
   }
   
-  h3, p {
+  h3, p, h4 {
     text-align: center;
-    font-size: 1.4em;
+    font-size: 2.5em;
   }
   
   header {
@@ -80,7 +80,6 @@ body {
   }
   
   .news-item {
-    background-color: #1a1a1a;
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -88,6 +87,6 @@ body {
   
   .news-item h3 {
     color: #f1f1f1;
-    font-size: 2em; 
+    font-size: 2.5em; 
   }
   
