@@ -79,16 +79,16 @@
       sidebar.style.width = '250px';
     }
   }
-  function flashHeader() {
+  function flashRainbowHeader() {
     var header = document.getElementById("flashingHeader");
-    var colors = ["red", "green", "blue"];
+    var colors = ["red", "orange", "yellow" "green", "blue", "indigo", "violet"];
+    var index = 0;
 
     setInterval(function(){
-      var randomColor = colors[Math.floor(Math.random() * colors.length)];
-      header.style.color = randomColor;
-    }, 4000);
-  }
-  flashHeader();
+      header.style.color = colors[index];
+      index = (index + 1) % colors.length;
+  }, 4000);
+  flashRainbowHeader();
 </script>
 
 </body>
