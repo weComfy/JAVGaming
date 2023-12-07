@@ -15,7 +15,7 @@
 
   <header>
     <div class="menu-button" onclick="toggleSidebar()">☰ Menu</div>
-    <h1>JAV Gaming</h1>
+    <h1 id="flashingHeader">JAV Gaming</h1>
   </header>
   
   <div id="sidebar">
@@ -35,6 +35,16 @@
         sidebar.style.width = '250px';
       }
     }
+      function flashHeader() {
+    var header = document.getElementById("flashingHeader");
+    var colors = ["red", "green", "blue"];
+
+    setInterval(function(){
+      var randomColor = colors[Math.floor(Math.random() * colors.length)];
+      header.style.color = randomColor;
+    }, 4000);
+  }
+  flashHeader();
   </script>
 <link rel="stylesheet" href="spiderman.css" >
 
