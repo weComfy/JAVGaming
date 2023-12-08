@@ -17,6 +17,11 @@
   <div id="header-image">
   <img src = "Jav-logo.png">
   <h1 id="flashingHeader">JAV Gaming</h1>
+  </div>
+  <div id="search-bar">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button onclick="search()">Search</button>
+  </div>
 </header>
 
 <div id="sidebar">
@@ -83,13 +88,18 @@
   }
   function flashHeader() {
     var header = document.getElementById("flashingHeader");
-    var colors = ["red", "orange", "yellow" "green", "blue", "indigo", "violet"];
+    var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
   }
-    setInterval(function(){
+    setInterval(function() {
       var randomColor = colors[Math.floor(Math.random() * colors.length)];
       header.style.color = randomColor;
     }, 4000);
   } 
+
+  function search() {
+    var searchInput = document.getElementById("searchInput").value;
+    alert("Searching for: " + searchInput);
+  }
   flashHeader();
 </script>
 
