@@ -12,38 +12,44 @@
 
     #header-image img {
       max-width: 100%; 
+      cursor: pointer;
     }
   </style>
 </head>
+  
 <body>
   <div id="sidebar">
     <a href="index.html">Home</a>
     <a href="shop.html">Shop</a>
     <a href="aboutus.html">About Us</a>
   </div>
+  
   <header>
     <div class="menu-button" onclick="toggleSidebar()">☰ Menu</div>
-    <div id="header-image">
-    <img width="200" height="200" src = "Photos/Jav-logo.png" alt="brand logo image">
-    </div>
+    <a href="index.html">
+     <div id="header-image">
+      <img width="200" height="200" src = "Photos/Jav-logo.png" alt="brand logo image">
+     </div>
+    </a>
     <h1 id="flashingHeader">JAV Gaming</h1>
     <div id="search-bar">
     <input type="text" id="searchInput" placeholder="Search...">
     <button onclick="search()">Search</button>
   </div>
   </header>
+  
   <div id="header-image">
-<img src="Photos/fc24.jpg" alt="Large Photo" width="90%">
-<video width = "640" height = "360" controls>
+    <img src="Photos/fc24.jpg" alt="Large Photo" width="90%">
+      <video width = "640" height = "360" controls>
       <source src = "Videos/FC24.mp4" alt="short video of Fifa gameplay" type = "video/mp4">
   </div>
 
   <main>
     <div style="height: 25px;"></div>
     <article class="news-item">
-    <p>Fifa, now EA Sports FC 24 is an association football themed simulation game. The game was developed by both EA sports Vancouver and EA Romania and published by EA Sports. Following the successful releases of their previous FIFA titles, which concluded with FIFA 23,
+      <p>Fifa, now EA Sports FC 24 is an association football themed simulation game. The game was developed by both EA sports Vancouver and EA Romania and published by EA Sports. Following the successful releases of their previous FIFA titles, which concluded with FIFA 23,
       this is EA Sports newest installment in their EA Sports FC seried. However, this is the 31st installment overall to EA's football simulation themed games. The game was released in 2023 for Windows, Nintendo Switch, Playstation 4/ 5 and Xbox One & Series X/S.
-    </p>
+      </p>
     </article>
   
     <section id="center-section">
