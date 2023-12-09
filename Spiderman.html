@@ -9,15 +9,26 @@
       margin: 0;
       -webkit-text-fill-color: rgb(255, 255, 255) ;
     }
+
+    #header-image {
+      tex-align: center;
+      margin-top: 20px;
+    }
+    #header-image img {
+      max-width: 100%;
+      cursor: pointer;
+    }
   </style>
 </head>
+  
 <body>
-
   <header>
     <div class="menu-button" onclick="toggleSidebar()">☰ Menu</div>
-    <div id="header-image">
-    <img width="200" height="200" src = "Photos/Jav-logo.png" alt="brand logo image">
-    </div>
+    <a href="index.html">
+      <div id="header-image">
+      <img width="200" height="200" src = "Photos/Jav-logo.png" alt="brand logo image">
+     </div>
+    </a>
     <h1 id="flashingHeader">JAV Gaming</h1>
     <div id="search-bar">
     <input type="text" id="searchInput" placeholder="Search...">
