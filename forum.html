@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+  
+    <title>Forum</title>
+  
+    <style>
+        body {
+            background-color: rgb(53, 7, 94);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+      #header-image {
+        text-align: center;
+        margin-top: 20px
+      }
+      #header-image img {
+        max-width: 100%;
+        cursor: pointer;
+      }
+
+        section {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        #post-form {
+            margin-bottom: 1rem;
+        }
+
+        .post {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+  
+<body>
+ <header>
+  <div class="menu-button" onclick="toggleSidebar()">☰ Menu</div>
+  <div id="header-image">
+  <img width="200" height="200" src = "Photos/Jav-logo.png" alt="brand logo image">
+  <h1 id="flashingHeader">JAV Gaming</h1>
+  </div>
+  <div id="search-bar">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button onclick="search()">Search</button>
+  </div>
+</header>
+
+  <div id="sidebar">
+  <a href="index.html">Home</a>
+  <a href="forum.html">Forum</a>
+  <a href="aboutus.html">About Us</a>
+</div>
+
+<div style="height: 100px;"></div>
+  
+    <section>
+        <form id="post-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <br>
+            <label for="post-content">Post Content:</label>
+            <textarea id="post-content" rows="4" required></textarea>
+            <br>
+            <button type="button" onclick="addPost()">Post</button>
+        </form>
+
+        <div id="posts-container"></div>
+    </section>
+
+    <script>
+        function addPost() {
+            const username = document.getElementById('username').value;
+            const postContent = document.getElementById('post-content').value;
+
+            if (username && postContent) {
+                const postContainer = document.getElementById('posts-container');
+                const postDiv = document.createElement('div');
+                postDiv.classList.add('post');
+                postDiv.innerHTML = `<strong>${username}</strong>: ${postContent}`;
+                postContainer.appendChild(postDiv);
+
+                // Clear form fields
+                document.getElementById('username').value = '';
+                document.getElementById('post-content').value = '';
+            } else {
+                alert('Please enter both username and post content.');
+            }
+        }
+      
+       function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    if (sidebar.style.width === '250px') {
+      sidebar.style.width = '0';
+    } else {
+      sidebar.style.width = '250px';
+    }
+  }
+  function flashHeader() {
+    var header = document.getElementById("flashingHeader");
+    var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+  
+    setInterval(function() {
+      var randomColor = colors[Math.floor(Math.random() * colors.length)];
+      header.style.color = randomColor;
+    }, 4000);
+  } 
+
+  function search() {
+    var searchInput = document.getElementById("searchInput").value;
+    alert("Searching for: " + searchInput);
+  }
+  
+  flashHeader();
+ </script>
+
+</body>
+</html>
