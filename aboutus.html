@@ -8,18 +8,35 @@
       background-color: rgb(53, 7, 94);
       margin: 0;
     }
+    #header-image {
+      text-align: center;
+      margin-top: 20px;
+    }
+    #header-image img {
+      max-width: 100%;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
 
   <header>
     <div class="menu-button" onclick="toggleSidebar()">☰ Menu</div>
-    <h1>JAV Gaming</h1>
+     <a href="index.html">
+        <div id="header-image">
+        <img width="200" height="200" src = "Photos/Jav-logo.png" alt="brand logo image">
+      </div>
+    </a>
+    <h1 id="flashingHeader">JAV Gaming</h1>
+    <div id="search-bar">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button onclick="search()">Search</button>
+  </div>
   </header>
   
   <div id="sidebar">
     <a href="index.html">Home</a>
-    <a href="shop.html">Shop</a>
+    <a href="forum.html">Forum</a>
     <a href="aboutus.html">About Us</a>
   </div>
   
@@ -34,6 +51,21 @@
         sidebar.style.width = '250px';
       }
     }
+     function flashHeader() {
+    var header = document.getElementById("flashingHeader");
+    var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+  
+    setInterval(function() {
+      var randomColor = colors[Math.floor(Math.random() * colors.length)];
+      header.style.color = randomColor;
+    }, 4000);
+  } 
+
+  function search() {
+    var searchInput = document.getElementById("searchInput").value;
+    alert("Searching for: " + searchInput);
+  }
+  flashHeader();
   </script>
 
 </body>
