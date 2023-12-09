@@ -55,7 +55,8 @@ body {
       cursor: pointer;
     }
    video {
-      width:100%;
+      width:640;
+      height: 360;
       border: 2px solid #000;
       box-sizing: border-box;
     }
