@@ -46,6 +46,20 @@ body {
     align-items: center;
   }
 
+   #header-image {
+      text-align: center;
+      margin-top: 20px; }
+
+   #header-image img {
+      max-width: 100%; 
+      cursor: pointer;
+    }
+   video {
+      width:100%;
+      border: 2px solid #000;
+      box-sizing: border-box;
+    }
+
   h1#flashingHeader {
     animation: neonFlash 1.5s infinite alternate;
     color: #00ff00;
